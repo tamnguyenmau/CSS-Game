@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Grid Farmer - A game for learning CSS grid layout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./logo.ico" type="image/x-icon">
+</head>
+  <body>
+      <section id="sidebar">
+          <div class="header">
+              <div>
+                  <h1 class="title">Grid Farmer</h1>
+              </div>
+              <div id="level-counter">
+                  <span class="arrow left">
+                      <span class="triangle"></span>
+                  </span>
+                  <span id="level-indicator">
+                      <span id="labelLevel" class="translate">Level</span>
+                      <span class="current">1</span>
+                      <span id="labelOf" class="translate">of</span>
+                      <span class="total">1</span>
+                      <span class="caret">▾</span>
+                  </span>
+                  <span class="arrow right">
+                      <span class="triangle"></span>
+                  </span>
+                  <div id="levelsWrapper" class="tooltip">
+                      <div id="levels"></div>
+                      <div id="labelReset" class="translate">Reset</div>
+                  </div>
+              </div>
+          </div>
+          <p id="instructions"></p>
+          <div id="editor">
+              <div id="css">
+                  <div class="line-numbers">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14</div>
+                  <pre id="before"></pre>
+                  <textarea id="code" autofocus autocapitalize="none"></textarea>
+                  <pre id="after"></pre>
+              </div>
+              <button id="next" class="translate">Next</button>
+          </div>
+          <div id="custom-inline"></div>
+
+          <div class="credits ">
+              <span id="labelFooter" class="translate">Grid Farmer is created by team D20C01A</span>
+              <span id="language">
+                  <span id="languageActive" class="toggle translate">English</span>
+                  <span class="tooltip">
+                      <a href="#en">English</a>
+                      <a href="#vi">Tiếng Việt</a>
+                  </span>
+              </span>
+          </div>
+          <div class="credits">
+              <span id="labelDifficult" class="translate">Level:</span>
+              <ul id="difficulty">
+                  <li id="goeasy" class="translate">Beginner</li>
+                  <li id="gomedium" class="active translate">Intermediate - No Directions</li>
+              </ul>   
+          </div>
+          <div class="credits">
+              <span id="flexboxFroggy" class="translate">Want to learn CSS flexbox? Play</span> <a href="../index.html">Flexbox Owlet</a>.
+          </div>
+      </section>
+      <section id="view">
+          <div id="board">
+              <div id="overlay">
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+              </div>
+              <div id="plants"></div>
+              <div id="garden"></div>
+              <div id="soil">
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+                  <span class="plot"></span>
+              </div>
+          </div>
+      </section>
+      <script src="node_modules/jquery/dist/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+      <script src="js/levels.js"></script>
+      <script src="js/docs.js"></script>
+      <script src="js/messages.js"></script>
+      <script src="js/game.js"></script>
+      <script>
+          (function (i, s, o, g, r, a, m) {
+              i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                  (i[r].q = i[r].q || []).push(arguments)
+              }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                  m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+          })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+          ga('create', 'UA-23019901-18', 'auto');
+          ga('send', 'pageview');
+      </script>
+
+      <div id="fb-root"></div>
+   
+  </body>
+</html>

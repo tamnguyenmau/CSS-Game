@@ -1,0 +1,72 @@
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/assets/images/flexbox-background2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0), #000 90%);
+}
+
+.intro-game {
+  margin-top: 180px;
+  text-align: center;
+}
+
+.intro-game .heading,
+.section-heading {
+  text-align: center;
+  font-size: 72px;
+  margin-bottom: 10px;
+}
+
+.intro-game .desc,
+.section-content {
+  font-size: 24px;
+  color: #e5e7eb;
+  font-weight: 300;
+}
+
+section {
+  padding: 60px 16px 0;
+}
+
+.highlight--purple {
+    color: #a855f7;
+}
+
+.highlight--green {
+    color: #10b981;
+}
+
+.highlight--orange {
+    color: #f59e0b;
+}
+
+
+.highlight--pink {
+    color: #ec4899;
+}
+
+.highlight--red {
+    color: #dc2626;
+}
+.home-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 8px 12px;
+}
